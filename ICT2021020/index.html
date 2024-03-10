@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakshi Juice Shop</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link rel="stylesheet" href="css/css.css">
+    <style>
+     
+        .tm-map {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .tm-iframe {
+            width: 100%;
+            max-width: 100%;
+            height: 400px;
+        }
+		 table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+			
+        }
+		td {
+		color:white;}
+        th {
+            background-color: #f2f2f2;
+        }
+        .tm-contact-form-container {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="tm-container">
+    <div class="tm-row">
+      <!-- Site Header -->
+      <div class="tm-left">
+        <div class="tm-left-inner">
+          <div class="tm-site-header">
+            <i class="fas fa-glass-cheers fa-3x tm-site-logo"></i>
+            <h1 class="tm-site-name">Dakshi Juice Shop</h1>
+          </div>
+          <nav class="tm-site-nav">
+            <ul class="tm-site-nav-ul">
+              <li class="tm-page-nav-item">
+                <a href="#menu" class="tm-page-link active">
+                  <i class="fas fa-cocktail tm-page-link-icon"></i>
+                  <span>Menu</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#about" class="tm-page-link">
+                  <i class="fas fa-info-circle tm-page-link-icon"></i>
+                  <span>About Us</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#contact" class="tm-page-link">
+                  <i class="fas fa-phone-alt tm-page-link-icon"></i>
+                  <span>Contact</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="faq.html" class="tm-page-link">
+                  <i class="fas fa-question-circle tm-page-link-icon"></i>
+                  <span>FAQ</span>
+                </a>
+              </li>
+             
+            </ul>
+          </nav>
+        </div>        
+      </div>
+      <div class="tm-right">
+        <main class="tm-main">
+          <div id="menu" class="tm-page-content">
+            <!-- Menu Page -->
+            <div class="tm-list">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Drink</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Orange Juice</td>
+                    <td>Freshly squeezed oranges</td>
+                    <td>150.00rs</td>
+                  </tr>
+                  <tr>
+                    <td>Apple Juice</td>
+                    <td>Pressed apples with no added sugar</td>
+                    <td>300.00rs</td>
+                  </tr>
+                  <tr>
+                    <td>Carrot Juice</td>
+                    <td>Carrots juiced with a hint of ginger</td>
+                    <td>200.00rs</td>
+                  </tr>
+                </tbody>
+              </table>
+              <img src="image.png" alt="Menu Map" class="tm-map" usemap="#menu-map">
+              <map name="menu-map">
+                <area shape="rect" coords="50,100,200,500" alt="coconut Juice" href="coconut.html">
+                <area shape="rect" coords="200,100,350,500" alt="mix Juice" href="mix.html">
+                <area shape="rect" coords="350,100,500,500" alt="pineapple Juice" href="pineapple.html">
+				<area shape="rect" coords="500,100,650,500" alt="berry Juice" href="berry.html">
+              </map>
+           <iframe class="tm-iframe" src="https://www.youtube.com/embed/C6i_u_R1XsA" frameborder="0" allowfullscreen></iframe>
+  </div>
+            <!-- end Menu Page -->
+          </div>
+
+          <!-- About Us Page -->
+          <div id="about" class="tm-page-content">
+            <div class="tm-black-bg tm-mb-20 tm-about-box-1">              
+              <h2 class="tm-text-primary tm-about-header">About Dakshi Juice Shop</h2>
+              <p>Dakshi Juice Shop provides fresh and healthy juices made from organic fruits and vegetables.</p>
+            </div>
+            <div class="tm-black-bg tm-mb-20 tm-about-box-2">              
+              <div class="tm-list-item tm-list-item-2">                
+                <div class="tm-list-item-text-2">
+                  <h2 class="tm-text-primary">Our Mission</h2>
+                  <p>We aim to promote a healthy lifestyle by providing nutritious and delicious juice options to our customers.</p>                  
+                </div>                
+              </div>
+              <p>Visit us to experience the goodness of nature in every sip!</p>
+            </div>
+          </div>
+          <!-- end About Us Page -->
+
+          <!-- Contact Page -->
+          <div id="contact" class="tm-page-content">
+            <div class="tm-black-bg tm-contact-text-container">
+              <h2 class="tm-text-primary">Contact Dakshi Juice Shop</h2>
+              <p>Feel free to reach out to us for any inquiries or feedback.</p>
+            </div>
+            <div class="tm-black-bg tm-contact-form-container tm-align-right">
+              <form action="" method="POST" id="contact-form">
+                <div class="tm-form-group">
+                  <input type="text" name="name" class="tm-form-control" placeholder="Name" required="" />
+                </div>
+                <div class="tm-form-group">
+                  <input type="email" name="email" class="tm-form-control" placeholder="Email" required="" />
+                </div>        
+                <div class="tm-form-group tm-mb-30">
+                  <textarea rows="6" name="message" class="tm-form-control" placeholder="Message" required=""></textarea>
+                </div>        
+                <div>
+                  <button type="submit" class="tm-btn-primary tm-align-right">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- end Contact Page -->
+        </main>
+      </div>    
+    </div>
+    <footer class="tm-site-footer">
+      <p class="tm-black-bg tm-footer-text">© 2024 Dakshi Juice Shop</p>
+    </footer>
+  </div>
+ 
+   <!-- Background video -->
+  <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+          <source src="video/stw.mp4" type="video/mp4">
+      </video>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>    
+  <script>
+    function setVideoSize() {
+      const vidWidth = 1920;
+      const vidHeight = 1080;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const tempVidWidth = windowHeight * vidWidth / vidHeight;
+      const tempVidHeight = windowWidth * vidHeight / vidWidth;
+      const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth
+    }
+  </script>
+</body>
+</html>
